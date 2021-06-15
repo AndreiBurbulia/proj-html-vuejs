@@ -1,14 +1,13 @@
 .navbar{
-    
-    width: $width_principal_container;
-    margin: auto;
 
     .top{
+        width: $width_principal_container;
+        margin: auto;
         
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.5rem 0;
+        padding: 1rem 0;
 
         img{
             height: 30px;
@@ -25,15 +24,21 @@
         }
     }
 
+    hr{
+        opacity: 0.3;
+    }
+
     .bottom{
-        padding: 0.5rem 0;
+        width: $width_principal_container;
+        margin: auto;
+        padding: 1rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
 
         a{
             text-decoration: none;
-            color: grey;
+            color: $color_voice_navbar;
             font-weight: bold;
             margin: 0 1rem;
         }

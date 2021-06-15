@@ -242,5 +242,36 @@
   border-radius: 2rem;
   font-weight: 500;
 }
+.browser_container .browser .new_arrivals {
+  height: 600px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-3-2x-scaled.jpg);
+  background-size: 100% 100%;
+  background-color: yellow;
+  margin: 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.browser_container .browser .new_arrivals span {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.browser_container .browser .new_arrivals h2 {
+  font-family: "Trocchi", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  margin: 2.5rem 0;
+}
+.browser_container .browser .new_arrivals a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  color: black;
+  background-color: white;
+  border-radius: 2rem;
+  font-weight: 500;
+}
 
 /*********** Footer ***********/

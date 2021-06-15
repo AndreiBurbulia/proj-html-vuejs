@@ -21,7 +21,7 @@
             }
         }
         
-        .product_card{
+        .category_card{
             display: flex;
             justify-content: space-between;
             margin: 5rem 0;
@@ -42,6 +42,53 @@
             }
         }
         
+        .type_food{
+            display: flex;
+            justify-content: space-between;
+            .box{
+                width: calc((100% /3) - 1rem);
+                height: 700px;
+                background-color: $bg_for_pattern;
+                background-image: url(/dist/img/bg-transparent-3.png);
+                background-repeat: repeat-x;
+                display: flex;
+                flex-direction: column;
+                
+                h2{
+                    color: white;
+                    margin: 3rem auto 2rem auto;
+                    font-family: 'Trocchi', serif;
+                    font-size: 2rem;
+                    text-transform: capitalize;
+                }
+
+                span{
+                    color: white;
+                    margin:0 auto;
+                    color: #5ba366;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    text-transform: capitalize;
+
+                }
+
+                img{
+                    width: 70%;
+                    margin:3rem auto;
+                }
+
+                a{
+                    color: white;
+                    margin:0 auto;
+                    text-decoration: none;
+                    background-color: #5ba366;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    font-weight: 500;
+                }
+
+            }
+        }
         
         
     }

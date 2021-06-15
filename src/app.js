@@ -50,6 +50,23 @@ const app = new Vue({
                 number: '6',
             },
         ],
+        typeOfFood: [
+            {
+                name: 'kibble',
+                type: 'dry',
+                url: '/dist/img/food-transparent-18-400x420.png',
+            },
+            {
+                name: 'moist',
+                type: 'manned',
+                url: '/dist/img/food-transparent-17-400x420.png',
+            },
+            {
+                name: 'frozen',
+                type: 'freeze-dried',
+                url: '/dist/img/food-transparent-16-400x420.png',
+            },
+        ],
     },
     methods: {
 

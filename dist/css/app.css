@@ -182,24 +182,65 @@
   max-width: 50%;
   margin: auto;
 }
-.browser_container .browser .product_card {
+.browser_container .browser .category_card {
   display: flex;
   justify-content: space-between;
   margin: 5rem 0;
 }
-.browser_container .browser .product_card .card {
+.browser_container .browser .category_card .card {
   text-align: center;
   width: calc((100% /4) - 1rem);
 }
-.browser_container .browser .product_card .card img {
+.browser_container .browser .category_card .card img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.browser_container .browser .product_card .card span {
+.browser_container .browser .category_card .card span {
   display: block;
   padding-top: 1rem;
   font-size: 1.2rem;
+}
+.browser_container .browser .type_food {
+  display: flex;
+  justify-content: space-between;
+}
+.browser_container .browser .type_food .box {
+  width: calc((100% /3) - 1rem);
+  height: 700px;
+  background-color: #1e3120;
+  background-image: url(/dist/img/bg-transparent-3.png);
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+}
+.browser_container .browser .type_food .box h2 {
+  color: white;
+  margin: 3rem auto 2rem auto;
+  font-family: "Trocchi", serif;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.browser_container .browser .type_food .box span {
+  color: white;
+  margin: 0 auto;
+  color: #5ba366;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.browser_container .browser .type_food .box img {
+  width: 70%;
+  margin: 3rem auto;
+}
+.browser_container .browser .type_food .box a {
+  color: white;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: #5ba366;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
 }
 
 /*********** Footer ***********/

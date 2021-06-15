@@ -1,0 +1,43 @@
+.browser_container{
+    background-color: limegreen;
+
+    .browser{
+        width: $width_principal_container;
+        margin: auto;
+        background-color: white;
+        padding: 5rem 0;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+        
+        
+        .intro_section{
+            width: 50%;
+            text-align: center;
+
+            h2{
+                font-family: 'Trocchi', serif;
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+            p{
+                
+                font-size: 1.3rem;
+            }
+        }
+
+        .product_card{
+            display: flex;
+
+            .card{
+                width: 300px;
+            
+            p{
+                text-align: center;
+            }
+            }
+        }
+    }
+}

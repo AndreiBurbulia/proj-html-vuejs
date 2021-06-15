@@ -1,4 +1,5 @@
 .jumbotron{
+    position: relative;
     .top{
         width: 100%;
         background-color: $bg_for_pattern;
@@ -19,8 +20,8 @@
 
     .middle{
         width: 100%;
-        height: 800px;
-        background-image: url(/dist/img/banner-5-2x-scaled.jpg);
+        height: 900px;
+        background-image:linear-gradient(180deg, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.2) 60%),url(/dist/img/banner-5-2x-scaled.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         .container{
@@ -42,8 +43,10 @@
             h1{
                 width: 50%;
                 color: white;
-                font-size: 4.5rem;
+                font-size: 4rem;
+                font-weight: 400;
                 margin: 3rem 0;
+                font-family: 'Trocchi', serif;
             }
 
             a{
@@ -86,5 +89,38 @@
 
             }
         }
+    }
+
+    .small_box{
+        height: 80px;
+        width: 80px;
+        border-radius: 0.5rem;
+        background-color: white;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        i{
+            font-size: 2.5rem;
+        }
+
+        span{
+            font-size: 2rem;
+            font-weight: bold;
+            color: limegreen;
+        }
+    }
+    .small_box:last-child{
+        top: 110px;
+    }
+
+    .small_box:last-child span::before{
+        content: '$';
+        font-size: 1.1rem;
+        vertical-align: super; 
     }
 }

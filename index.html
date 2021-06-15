@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Site </title>
+    <title>Avada Pet Supplies</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
 
     <!-- CSS -->
@@ -13,32 +16,57 @@
 </head>
 
 <body>
-    <!-- Site Header -->
-    <header id="site_header">
-        <!-- Top -->
-        <!-- Bottom -->
-    </header>
-    <!-- /Site Header -->
+    <div id="app">
+        <!-- Site Header -->
+        <header id="site_header">
+            <nav class="navbar">
 
-    <!-- Site Main -->
-    <main id="site_main">
-        <!-- Browser Section -->
-        <!-- Testimonial Setion  -->
-        <!-- Information Section -->
-        <!-- New Product Section -->
-    </main>
-    <!-- /Site Main -->
+                <!-- Top -->
+                <div class="top">
+                    <img src="./dist/img/dark-pet-logo.png" alt="Logo of Avada Pet Supplies">
+                    <input type="search" placeholder="Search...">
+                    <span><strong>Questions?</strong> Call us: 1:800,123,4567</span>
+                    <div>
+                        <i class="fas fa-shopping-bag"></i>
+                        <i class="far fa-user"></i>
+                    </div>
+                </div>
 
-    <!-- Site Footer -->
-    <footer id="site_footer">
-        <!-- Link Conection -->
-        <!-- Copyright -->
-    </footer>
-    <!-- /Site Footer -->
+                <!-- Bottom -->
+                <div class="bottom">
+                    <a href="#" v-for="voice in voiceNavbar">
+                        {{voice.name}}
+                        <i class="fas fa-chevron-down" v-if="voice.submenu"></i>
+                    </a>
+
+                </div>
+
+            </nav>
+            <!-- Jumbotron -->
+        </header>
+        <!-- /Site Header -->
+
+        <!-- Site Main -->
+        <main id="site_main">
+            <!-- Browser Section -->
+            <!-- Testimonial Setion  -->
+            <!-- Information Section -->
+            <!-- New Product Section -->
+        </main>
+        <!-- /Site Main -->
+
+        <!-- Site Footer -->
+        <footer id="site_footer">
+            <!-- Link Conection -->
+            <!-- Copyright -->
+        </footer>
+        <!-- /Site Footer -->
+
+    </div>
 
 
     <!-- Vue JS -->
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- JS Main -->
     <script src="./dist/js/app.js"></script>
 </body>

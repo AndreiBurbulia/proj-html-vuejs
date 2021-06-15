@@ -1,5 +1,6 @@
 /* Font*/
 /*Common*/
+/*Common variables*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,5 +8,40 @@
 }
 
 /*********** Header ***********/
+.navbar {
+  width: 80%;
+  margin: auto;
+}
+.navbar .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.navbar .top img {
+  height: 30px;
+}
+.navbar .top input {
+  width: 400px;
+  height: 30px;
+  background-color: #dcd5d0;
+  border-radius: 1rem;
+}
+.navbar .top i {
+  margin-left: 0.5rem;
+}
+.navbar .bottom {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .bottom a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
 /*********** Main ***********/
 /*********** Footer ***********/

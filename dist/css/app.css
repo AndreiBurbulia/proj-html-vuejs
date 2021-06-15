@@ -160,9 +160,6 @@
 }
 
 /*********** Main ***********/
-.browser_container {
-  background-color: limegreen;
-}
 .browser_container .browser {
   width: 80%;
   margin: auto;
@@ -207,7 +204,6 @@
 }
 .browser_container .browser .type_food .box {
   width: calc((100% /3) - 1rem);
-  height: 700px;
   background-color: #1e3120;
   background-image: url(/dist/img/bg-transparent-3.png);
   background-repeat: repeat-x;
@@ -241,6 +237,7 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: 500;
+  margin-bottom: 2rem;
 }
 .browser_container .browser .new_arrivals {
   height: 600px;
@@ -271,6 +268,51 @@
   color: black;
   background-color: white;
   border-radius: 2rem;
+  font-weight: 500;
+}
+.browser_container .browser .best_sellers .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.browser_container .browser .best_sellers .top span {
+  color: #5ba366;
+  font-size: 1.2rem;
+}
+.browser_container .browser .best_sellers .top h2 {
+  font-family: "Trocchi", serif;
+  font-size: 3rem;
+  padding-top: 1.5rem;
+}
+.browser_container .browser .best_sellers .top a {
+  color: white;
+  text-decoration: none;
+  background-color: #5ba366;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+.browser_container .browser .best_sellers .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.browser_container .browser .best_sellers .bottom .card {
+  width: calc((100% /4) - 1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.browser_container .browser .best_sellers .bottom .card img {
+  width: 100%;
+}
+.browser_container .browser .best_sellers .bottom .card span:nth-of-type(1) {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.browser_container .browser .best_sellers .bottom .card span:nth-of-type(2) {
+  color: #5ba366;
   font-weight: 500;
 }
 

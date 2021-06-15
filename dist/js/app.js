@@ -58,6 +58,27 @@ var app = new Vue({
       name: 'frozen',
       type: 'freeze-dried',
       url: '/dist/img/food-transparent-16-400x420.png'
+    }],
+    topSellers: [{
+      name: 'Transport cage',
+      url: '/dist/img/product-21-400x400.jpg',
+      price: '25.00',
+      offPrice: false
+    }, {
+      name: 'Dog leash',
+      url: '/dist/img/product-20-400x400.jpg',
+      price: '25.00',
+      offPrice: false
+    }, {
+      name: 'Animal transport cage',
+      url: '/dist/img/product-16-400x400.jpg',
+      price: '35.00',
+      offPrice: '25.00'
+    }, {
+      name: 'Colorful cat leash',
+      url: '/dist/img/product-11-400x400.jpg',
+      price: '12.00',
+      offPrice: false
     }]
   },
   methods: {}

@@ -100,6 +100,7 @@
         <main id="site_main">
             <!-- Browser Section -->
             <div class="browser_container">
+
                 <div class="browser">
                     <!-- Intro  -->
                     <div class="intro">
@@ -132,11 +133,33 @@
                         <a href="#">Learn more about us</a>
                     </div>
 
+                    <!-- Best Sellers -->
+                    <div class="best_sellers">
+                        <!-- Top Best Sellers -->
+                        <div class="top">
+                            <div>
+                                <span>All-time best Sellers</span>
+                                <h2>Items everyone loves</h2>
+                            </div>
+                            <a href="#">View all products</a>
+                        </div>
 
+                        <!-- Bottom Best Sellers -->
+                        <div class="bottom">
+                            <div class="card" v-for="prod in topSellers">
+                                <img :src="prod.url" alt="prod.name">
+                                <span>{{prod.name}}</span>
+                                <span>${{prod.price}}</span>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
 
+
+
             </div>
+
             <!-- Testimonial Setion  -->
             <!-- Information Section -->
             <!-- New Product Section -->

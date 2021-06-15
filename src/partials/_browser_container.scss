@@ -1,5 +1,4 @@
 .browser_container{
-    background-color: limegreen;
 
     .browser{
         width: $width_principal_container;
@@ -47,7 +46,7 @@
             justify-content: space-between;
             .box{
                 width: calc((100% /3) - 1rem);
-                height: 700px;
+                //height: 700px;
                 background-color: $bg_for_pattern;
                 background-image: url(/dist/img/bg-transparent-3.png);
                 background-repeat: repeat-x;
@@ -85,6 +84,7 @@
                     padding: 1rem 2rem;
                     border-radius: 2rem;
                     font-weight: 500;
+                    margin-bottom: 2rem;
                 }
 
             }
@@ -120,6 +120,60 @@
                 background-color: white;
                 border-radius: 2rem;
                 font-weight: 500;
+            }
+        }
+
+        .best_sellers{
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 4rem;
+
+                span{
+                    color: #5ba366;
+                    font-size: 1.2rem;
+                }
+                h2{
+                font-family: 'Trocchi', serif;
+                font-size: 3rem;
+                padding-top: 1.5rem;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                    background-color: #5ba366;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    font-weight: 500;
+                }
+
+            }
+
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                .card{
+                    width: calc((100% /4) - 1rem);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 100%;
+                    }
+                    span:nth-of-type(1){
+                        margin: 1rem 0;
+                        font-size: 1.3rem;
+                    }
+                    span:nth-of-type(2){
+                        color: #5ba366;
+                        font-weight: 500;
+                    }
+                }
+
             }
         }
     }

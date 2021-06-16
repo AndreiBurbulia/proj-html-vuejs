@@ -48,7 +48,9 @@
             a{
                 @include button_style;
                 @include light_button;
-
+            }
+            a:hover{
+                @include dark_button;
             }
 
         }

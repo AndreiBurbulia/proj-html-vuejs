@@ -370,6 +370,7 @@
 .testimonial .container .join_newsletter h2 {
   color: black;
   font-size: 3rem;
+  font-family: "Trocchi", serif;
 }
 .testimonial .container .join_newsletter p {
   font-size: 1.4rem;
@@ -507,6 +508,53 @@
 .information .bottom .container .box i {
   font-size: 4rem;
   margin-bottom: 2rem;
+}
+
+.new_products {
+  padding: 5rem 0;
+}
+.new_products .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new_products .container h2 {
+  font-family: "Trocchi", serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.new_products .container > span {
+  font-size: 1.2rem;
+  color: #3d6f42;
+}
+.new_products .container .products_container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new_products .container .products_container .card {
+  width: calc((100% / 3) - 1rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.new_products .container .products_container .card img {
+  width: 100%;
+}
+.new_products .container .products_container .card p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+.new_products .container .products_container .card span {
+  color: #3d6f42;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 /*********** Footer ***********/

@@ -135,6 +135,38 @@ const app = new Vue({
                 url: './dist/img/blog-4-400x400.jpg',
             },
         ],
+        newProducts: [
+            {
+                url: './dist/img/product-8-500x500.jpg',
+                name: 'Colored pet bed',
+                price: '$18.00 - $26.00',
+            },
+            {
+                url: './dist/img/product-2-500x500.jpg',
+                name: 'Colorful ball set',
+                price: '$29.00',
+            },
+            {
+                url: './dist/img/product-3-500x500.jpg',
+                name: 'Dob bone',
+                price: '$18.00',
+            },
+            {
+                url: './dist/img/product-4-500x500.jpg',
+                name: 'Animal transport bag',
+                price: '$29.00',
+            },
+            {
+                url: './dist/img/product-5-500x500.jpg',
+                name: 'Animal transport cage',
+                price: '$35.00',
+            },
+            {
+                url: './dist/img/product-10-500x500.jpg',
+                name: 'Closable cat litter',
+                price: '$16.00',
+            },
+        ],
     },
     methods: {
 

@@ -204,16 +204,22 @@
 
             <!-- Information Section -->
             <div class="information">
+
+                <!-- Left Box -->
                 <div class="left">
                     <span>Find the best animal supplies</span>
                     <h2>Popular Accessories</h2>
                     <a href="#">View all toys accessories</a>
                 </div>
+
+                <!-- Right Box -->
                 <div class="right">
                     <span>Find the best food</span>
                     <h2>New food arrival</h2>
                     <a href="#">View all food products</a>
                 </div>
+
+                <!-- Bottom Box -->
                 <div class="bottom">
                     <div class="container">
                         <div class="box">
@@ -235,7 +241,30 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- New Product Section -->
+            <div class="new_products">
+                <div class="container">
+                    <h2>New products arrival</h2>
+                    <span>Latest products</span>
+
+                    <div class="products_container">
+                        <!-- <div class="card">
+                            <img src="./dist/img/product-8-500x500.jpg" alt="">
+                            <p>Colored pet bed</p>
+                            <span>$18.00 - $26.00</span>
+                        </div> -->
+                        <div class="card" v-for="prod in newProducts">
+                            <img :src="prod.url" alt="prod.name">
+                            <p>{{prod.name}}</p>
+                            <span>{{prod.price}}</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </main>
         <!-- /Site Main -->
 

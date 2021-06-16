@@ -581,7 +581,8 @@ footer .conection_footer .top .box img {
 }
 footer .conection_footer .top .box span {
   display: block;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 footer .conection_footer .top .box h2 {
   font-weight: 500;
@@ -638,6 +639,26 @@ footer .conection_footer .top .box:last-of-type a {
   color: white;
   width: 100%;
   text-align: center;
+}
+footer .conection_footer .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+footer .conection_footer .bottom ul {
+  list-style: none;
+  padding-top: 3rem;
+}
+footer .conection_footer .bottom ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+footer .conection_footer .bottom ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 footer .copyright {
   padding: 1rem;

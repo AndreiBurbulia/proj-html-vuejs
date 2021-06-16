@@ -19,7 +19,8 @@ footer{
                 }
                 span{
                     display: block;
-                    line-height: 1.5rem;
+                    font-size: 1.2rem;
+                    line-height: 2rem;
                 }
                 h2{
                     font-weight: 500;
@@ -79,6 +80,28 @@ footer{
 
             }
             
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 4rem;
+            ul{
+                list-style: none;
+                padding-top: 3rem;
+                
+                li{
+                    display: inline-block;
+                    padding: 0 1rem;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 

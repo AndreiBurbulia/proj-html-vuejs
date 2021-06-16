@@ -165,13 +165,14 @@
   width: 80px;
   border-radius: 0.5rem;
   background-color: white;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 150px;
   right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.192);
 }
 .jumbotron .small_box i {
   font-size: 2.5rem;
@@ -182,7 +183,7 @@
   color: limegreen;
 }
 .jumbotron .small_box:last-child {
-  top: 110px;
+  top: 240px;
 }
 .jumbotron .small_box:last-child span::before {
   content: "$";
@@ -305,6 +306,10 @@
   font-weight: bold;
   background-color: white;
   color: black;
+}
+.browser_container .browser .new_arrivals a:hover {
+  background-color: #3d6f42;
+  color: white;
 }
 .browser_container .browser .best_sellers .top {
   display: flex;
@@ -476,6 +481,11 @@
   background-color: #3d6f42;
   color: white;
 }
+.testimonial .container .join_newsletter a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #3d6f42;
+}
 .testimonial .container h2:nth-of-type(2) {
   color: black;
 }
@@ -544,6 +554,11 @@
   color: white;
   margin: 4rem 0;
 }
+.testimonial .container a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #3d6f42;
+}
 
 .information {
   display: flex;
@@ -577,6 +592,14 @@
   font-weight: bold;
   background-color: white;
   color: black;
+}
+.information .left a:hover, .information .right a:hover {
+  background-color: #3d6f42;
+  color: white;
+}
+.information .left:hover, .information .right:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 .information .left {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-8-2x.jpg);
@@ -714,6 +737,11 @@ footer .conection_footer {
   margin: auto;
   color: white;
 }
+footer .conection_footer a:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+}
 footer .conection_footer .top {
   display: flex;
   justify-content: space-between;
@@ -780,6 +808,10 @@ footer .conection_footer .top .box:last-of-type a {
   color: white;
   width: 100%;
   text-align: center;
+}
+footer .conection_footer .top .box:last-of-type a:hover {
+  background-color: white;
+  color: black;
 }
 footer .conection_footer .bottom {
   display: flex;

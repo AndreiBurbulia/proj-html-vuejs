@@ -149,7 +149,15 @@ var app = new Vue({
       offPrice: false
     }]
   },
-  methods: {}
+  methods: {},
+  mounted: function mounted() {
+    window.addEventListener("scroll", function (e) {
+      if (scrollY > 1000) {
+        console.log(scrollY);
+      }
+    });
+  } // computed
+
 });
 
 /***/ }),

@@ -177,8 +177,17 @@ const app = new Vue({
                 offPrice: false,
             },
         ],
+
     },
     methods: {
 
     },
+
+    mounted() {
+
+    },
+
+    computed: {
+
+    }
 })

@@ -2,7 +2,13 @@ footer{
     background-color: $bg_for_pattern;
     .conection_footer{
         @include container_size_and_center;
-        color: white;
+        color: $primary_color_text;
+
+        a:hover{
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid white;
+            font-weight: bold;
+        }
         
 
         .top{
@@ -70,6 +76,9 @@ footer{
                     @include dark_button;
                     width: 100%;
                     text-align: center;
+                }
+                a:hover{
+                    @include light_button
                 }
 
             }

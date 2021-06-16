@@ -83,18 +83,24 @@
         }
     }
 
+    .bottomPositionFix{
+        position: fixed;
+        top: 0;
+    }
+
     .small_box{
         height: 80px;
         width: 80px;
         border-radius: 0.5rem;
         background-color: white;
-        position: absolute;
-        top: 20px;
+        position: fixed;
+        top: 150px;
         right: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.192);
 
         i{
             font-size: 2.5rem;
@@ -107,7 +113,7 @@
         }
     }
     .small_box:last-child{
-        top: 110px;
+        top: 240px;
     }
 
     .small_box:last-child span::before{

@@ -79,6 +79,10 @@
                 @include button_style;
                 @include dark_button;
             }
+            a:hover{
+                @include light_button;
+                border: 1px solid $primary_color_button;
+            }
         }
 
         h2:nth-of-type(2){
@@ -150,6 +154,10 @@
             @include button_style;
             @include dark_button;
             margin: 4rem 0;
+        }
+        a:hover{
+            @include light_button;
+            border: 1px solid $primary_color_button;
         }
     }
 }

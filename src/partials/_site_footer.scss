@@ -1,0 +1,91 @@
+footer{
+    background-color: $bg_for_pattern;
+    .conection_footer{
+        @include container_size_and_center;
+        color: white;
+        
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid white;
+            .box{
+                width: calc((100% / 4 ) - 4rem);
+                margin: 7rem 0;
+
+                img{
+                    width: 80%;
+                    padding-bottom: 2rem;
+                }
+                span{
+                    display: block;
+                    line-height: 1.5rem;
+                }
+                h2{
+                    font-weight: 500;
+                    font-size: 1.7rem;
+                }
+
+                ul{
+                    list-style: none;
+                    margin-top: 2rem;
+
+                    li{
+                        padding: 1rem 0;
+                        font-size: 1.2rem;
+
+                        a{
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+                
+
+            }
+
+            .box:last-of-type{
+                background-color: #264229;
+                background-image: url(/dist/img/bg-transparent-3.png);
+                background-repeat: repeat-x;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 2rem;
+                border-radius: 0.5rem;
+
+                input{
+                width: 100%;
+                height: 50px;
+                border-radius: 2rem;
+                border: none;
+                margin: 2rem 0;
+            }
+
+            input:placeholder-shown{
+                background-color: lightgray;
+                padding-left: 1rem
+            }
+
+            a{
+                @include button_style;
+                background-color: $primary_color_button;
+                color:white;
+                width: 100%;
+                text-align: center;
+                
+            }
+
+            }
+            
+        }
+    }
+
+    .copyright{
+        padding: 1rem;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+}

@@ -149,7 +149,10 @@
                             <div class="card" v-for="prod in topSellers">
                                 <img :src="prod.url" alt="prod.name">
                                 <span>{{prod.name}}</span>
-                                <span>${{prod.price}}</span>
+                                <div>
+                                    <span :class="(prod.offPrice == false) ? 'price' : 'offPrice'"> <del>${{prod.price}}</del> </span>
+                                    <span v-if="prod.offPrice" class="price">{{prod.offPrice}}</span>
+                                </div>
                             </div>
 
                         </div>

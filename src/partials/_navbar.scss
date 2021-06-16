@@ -11,10 +11,7 @@
         img{
             height: 50px;
         }
-        input{
-            width: 400px;
-            @include input_text_style;
-        }
+        
         span{
             color: $secondary_color_text;
             font-size: 1.2rem;
@@ -24,6 +21,26 @@
             margin-left: 0.5rem;
             color: $secondary_color_text;
             font-size: 1.5rem;
+        }
+
+        .input_box{
+            position: relative;
+            i{
+                position: absolute;
+                color: $secondary_color_text;
+                line-height: 50px;
+                vertical-align: middle;
+                padding-left: 5px;
+            }
+            input{
+                width: 400px;
+                @include input_text_style;
+                padding-left: 45px;
+            }
+            input[type="search"]::-webkit-search-cancel-button{
+                font-size: 1.5rem;
+                padding-right: 1rem;
+            }
         }
     }
 

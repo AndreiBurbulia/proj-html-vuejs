@@ -26,15 +26,6 @@
 .navbar .top img {
   height: 50px;
 }
-.navbar .top input {
-  width: 400px;
-  height: 50px;
-  border-radius: 2rem;
-  border: none;
-  outline: none;
-  background-color: #f8f5f2;
-  padding-left: 1rem;
-}
 .navbar .top span {
   color: black;
   font-size: 1.2rem;
@@ -43,6 +34,30 @@
   margin-left: 0.5rem;
   color: black;
   font-size: 1.5rem;
+}
+.navbar .top .input_box {
+  position: relative;
+}
+.navbar .top .input_box i {
+  position: absolute;
+  color: black;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.navbar .top .input_box input {
+  width: 400px;
+  height: 50px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #f8f5f2;
+  padding-left: 1rem;
+  padding-left: 45px;
+}
+.navbar .top .input_box input[type=search]::-webkit-search-cancel-button {
+  font-size: 1.5rem;
+  padding-right: 1rem;
 }
 .navbar hr {
   opacity: 0.3;

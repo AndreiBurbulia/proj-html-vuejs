@@ -179,8 +179,15 @@
                         <a href="#">Subscribe</a>
                     </div>
                     <h2>Get the best tips & tricks</h2>
-                    <span>recent articles</span>
-                    <div class="articles">c</div>
+                    <span>Recent articles</span>
+                    <div class="articles">
+                        <div class="article" v-for=" element in articles">
+                            <img :src="element.url" alt="element.title">
+                            <p>{{element.title}}</p>
+                            <span>{{element.date}}</span>
+                        </div>
+
+                    </div>
                     <a href="#">Read all articles</a>
                 </div>
 

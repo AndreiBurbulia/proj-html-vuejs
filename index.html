@@ -100,7 +100,6 @@
         <main id="site_main">
             <!-- Browser Section -->
             <div class="browser_container">
-
                 <div class="browser">
                     <!-- Intro  -->
                     <div class="intro">
@@ -149,18 +148,16 @@
                             <div class="card" v-for="prod in topSellers">
                                 <img :src="prod.url" alt="prod.name">
                                 <span>{{prod.name}}</span>
-                                <div>
-                                    <span :class="(prod.offPrice == false) ? 'price' : 'offPrice'"> <del>${{prod.price}}</del> </span>
-                                    <span v-if="prod.offPrice" class="price">{{prod.offPrice}}</span>
+                                <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
+                                <div v-else>
+                                    <span class="offPrice"> <del>{{prod.price}}</del> </span>
+                                    <span class="price">{{prod.offPrice}}</span>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
 
             <!-- Testimonial Setion  -->
@@ -258,7 +255,12 @@
                         <div class="card" v-for="prod in newProducts">
                             <img :src="prod.url" alt="prod.name">
                             <p>{{prod.name}}</p>
-                            <span>{{prod.price}}</span>
+                            <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
+                            <div v-else>
+                                <span class="offPrice"> <del>{{prod.price}}</del> </span>
+                                <span class="price">{{prod.offPrice}}</span>
+                                <span class="sale">Sale!</span>
+                            </div>
                         </div>
 
                     </div>

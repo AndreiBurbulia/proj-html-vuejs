@@ -333,6 +333,7 @@
 }
 .browser_container .browser .best_sellers .bottom .card .offPrice {
   font-size: 0.7rem;
+  text-decoration: line-through;
 }
 
 .testimonial {
@@ -558,6 +559,7 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  position: relative;
 }
 .new_products .container .products_container .card img {
   width: 100%;
@@ -567,9 +569,20 @@
   font-size: 1.3rem;
   color: black;
 }
-.new_products .container .products_container .card span {
+.new_products .container .products_container .card .price {
   color: #3d6f42;
   font-weight: 500;
+  font-size: 1.2rem;
+}
+.new_products .container .products_container .card .sale {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: green;
+  padding: 1rem;
+  border-radius: 100%;
+  color: white;
+  font-weight: bold;
   font-size: 1.2rem;
 }
 

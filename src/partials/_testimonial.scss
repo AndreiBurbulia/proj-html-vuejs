@@ -123,5 +123,12 @@
 
             }
         }
+
+        a{
+            @include button_style;
+            background-color: $primary_color_button;
+            color: white;
+            margin: 4rem 0;
+        }
     }
 }

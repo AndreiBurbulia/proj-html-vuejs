@@ -220,7 +220,7 @@
 .browser_container .browser .type_food .box span {
   color: white;
   margin: 0 auto;
-  color: #5ba366;
+  color: #3d6f42;
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -236,7 +236,7 @@
   font-weight: bold;
   color: white;
   margin: 0 auto;
-  background-color: #5ba366;
+  background-color: #3d6f42;
   margin-bottom: 2rem;
 }
 .browser_container .browser .new_arrivals {
@@ -276,7 +276,7 @@
   margin-bottom: 4rem;
 }
 .browser_container .browser .best_sellers .top span {
-  color: #5ba366;
+  color: #3d6f42;
   font-size: 1.2rem;
 }
 .browser_container .browser .best_sellers .top h2 {
@@ -290,7 +290,7 @@
   border-radius: 2rem;
   font-weight: bold;
   color: white;
-  background-color: #5ba366;
+  background-color: #3d6f42;
 }
 .browser_container .browser .best_sellers .bottom {
   display: flex;
@@ -311,7 +311,7 @@
   font-size: 1.3rem;
 }
 .browser_container .browser .best_sellers .bottom .card span:nth-of-type(2) {
-  color: #5ba366;
+  color: #3d6f42;
   font-weight: 500;
 }
 
@@ -400,7 +400,7 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold;
-  background-color: #5ba366;
+  background-color: #3d6f42;
   color: white;
 }
 .testimonial .container h2:nth-of-type(2) {
@@ -409,7 +409,7 @@
 .testimonial .container > span {
   font-size: 1.4rem;
   margin-top: 1rem;
-  color: #5ba366;
+  color: #3d6f42;
 }
 .testimonial .container .articles {
   margin-top: 3rem;
@@ -432,6 +432,15 @@
 .testimonial .container .articles .article span {
   padding-left: 2rem;
   font-size: 0.8rem;
+}
+.testimonial .container a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #3d6f42;
+  color: white;
+  margin: 4rem 0;
 }
 
 /*********** Footer ***********/

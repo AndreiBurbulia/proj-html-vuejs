@@ -165,6 +165,8 @@
                 <div class="container">
 
                     <h2>Users testimonials</h2>
+
+                    <!-- Review Card -->
                     <div class="reviews">
                         <div class="review" v-for="element in reviews">
                             <img :src="element.url" alt="element.description">
@@ -172,26 +174,34 @@
                             <span>{{ element.name }}, {{element.theme}}</span>
                         </div>
                     </div>
+
+                    <!-- Banner Newsletter -->
                     <div class="join_newsletter">
                         <h2>Join our newsletter</h2>
                         <p>Volupat vel turpis nulla lorem sed semper. Aliquam sagittis libero viverra vehicula nullam ut nisl.</p>
                         <input type="text" name="" id="" placeholder="Insert your email...*">
                         <a href="#">Subscribe</a>
                     </div>
+
+                    <!-- Blog Articles -->
                     <h2>Get the best tips & tricks</h2>
                     <span>Recent articles</span>
+
+                    <!-- Card Articles -->
                     <div class="articles">
                         <div class="article" v-for=" element in articles">
                             <img :src="element.url" alt="element.title">
                             <p>{{element.title}}</p>
                             <span>{{element.date}}</span>
                         </div>
-
                     </div>
                     <a href="#">Read all articles</a>
+
                 </div>
 
             </div>
+
+
             <!-- Information Section -->
             <!-- New Product Section -->
         </main>

@@ -443,4 +443,70 @@
   margin: 4rem 0;
 }
 
+.information {
+  background-color: lightgreen;
+  display: flex;
+  flex-wrap: wrap;
+}
+.information .left, .information .right {
+  padding: 6rem 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+.information .left span, .information .right span {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.information .left h2, .information .right h2 {
+  font-family: "Trocchi", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: white;
+  margin: 2.5rem 0;
+}
+.information .left a, .information .right a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+}
+.information .left {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-8-2x.jpg);
+}
+.information .right {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-9-2x.jpg);
+}
+.information .bottom {
+  height: 300px;
+  width: 100%;
+  background-color: #1e3120;
+  background-image: url(/dist/img/bg-transparent-3.png);
+  background-repeat: repeat-x;
+}
+.information .bottom .container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.information .bottom .container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.information .bottom .container .box i {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
 /*********** Footer ***********/

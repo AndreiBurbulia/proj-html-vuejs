@@ -9,11 +9,13 @@
             text-align: center;
             h2{
                 font-family: $font_title;
+                color: $secondary_color_text;
                 font-size: 2rem;
                 margin-bottom: 2rem;
             }
             p{
                 font-size: 1.2rem;
+                color: $secondary_color_text;
                 max-width: 50%;
                 margin: auto;
             }
@@ -33,6 +35,7 @@
                     object-fit: cover;
                 }
                 span{
+                    color: $secondary_color_text;
                     display: block;
                     padding-top: 1rem;
                     font-size: 1.2rem;
@@ -52,7 +55,7 @@
                 flex-direction: column;
                 
                 h2{
-                    color: white;
+                    color: $primary_color_text;
                     margin: 3rem auto 2rem auto;
                     font-family: $font_title;
                     font-size: 2rem;
@@ -60,7 +63,6 @@
                 }
 
                 span{
-                    color: white;
                     margin:0 auto;
                     color: $primary_color_button;
                     font-size: 1.3rem;
@@ -76,9 +78,8 @@
 
                 a{
                     @include button_style;
-                    color: white;
+                    @include dark_button;
                     margin:0 auto;
-                    background-color: $primary_color_button;
                     margin-bottom: 2rem;
                 }
 
@@ -96,7 +97,7 @@
             flex-direction: column;
             
             span{
-                color: white;
+                color: $primary_color_text;
                 text-transform: uppercase;
                 font-weight: 500;
             }
@@ -104,13 +105,12 @@
                 font-family: $font_title;
                 font-size: 4rem;
                 font-weight: 400;
-                color: white;
+                color: $primary_color_text;
                 margin: 2.5rem 0;
             }
             a{
                 @include button_style;
-                color: black;
-                background-color: white;
+                @include light_button;
             }
         }
 
@@ -127,14 +127,14 @@
                 }
                 h2{
                 font-family: $font_title;
+                color: $secondary_color_text;
                 font-size: 3rem;
                 padding-top: 1.5rem;
                 }
 
                 a{
                     @include button_style;
-                    color: white;
-                    background-color: $primary_color_button;
+                    @include dark_button;
                 }
 
             }
@@ -155,6 +155,7 @@
                     span:nth-of-type(1){
                         margin: 1rem 0;
                         font-size: 1.3rem;
+                        color: $secondary_color_text;
                     }
                     span:nth-of-type(2){
                         color: $primary_color_button;

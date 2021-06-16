@@ -15,3 +15,21 @@
     border-radius: 2rem;
     font-weight: bold;
 }
+
+@mixin light_button {
+    background-color: white;
+    color: black;
+}
+@mixin dark_button {
+    background-color: $primary_color_button;
+    color: white;
+}
+
+@mixin input_text_style {
+    height: 50px;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    background-color: $input_bg_color;
+    padding-left: 1rem
+}

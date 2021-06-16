@@ -10,7 +10,7 @@
             padding: 2rem 0;
 
             span{
-                color: white;
+                color: $primary_color_text;
             }
         }
     }
@@ -32,13 +32,13 @@
 
             span{
                 text-transform: uppercase;
-                color: white;
+                color: $primary_color_text;
                 font-weight: bold;
             }
 
             h1{
                 width: 50%;
-                color: white;
+                color: $primary_color_text;
                 font-size: 4rem;
                 font-weight: 400;
                 margin: 3rem 0;
@@ -47,8 +47,7 @@
 
             a{
                 @include button_style;
-                background-color: white;
-                color: black;
+                @include light_button;
 
             }
 
@@ -69,13 +68,13 @@
             }
 
             span{
-                color: white;
+                color: $primary_color_text;
                 font-size: 1.3rem;
                 margin: 0 1rem;
             }
 
             a{
-                color: white;
+                color: $primary_color_text;
                 font-size: 1.3rem;
 
             }

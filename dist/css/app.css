@@ -1,9 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Trocchi&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 /* Font*/
 /*Common*/
-/*Common variables*/
-/*Navbar*/
-/*Jumbotron*/
+/*Font*/
+/*Size*/
+/*Background color*/
+/*Button color*/
+/*Text color*/
+/*Input box*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,16 +24,25 @@
   padding: 1rem 0;
 }
 .navbar .top img {
-  height: 30px;
+  height: 50px;
 }
 .navbar .top input {
   width: 400px;
-  height: 30px;
-  background-color: #dcd5d0;
-  border-radius: 1rem;
+  height: 50px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background-color: #f8f5f2;
+  padding-left: 1rem;
+}
+.navbar .top span {
+  color: black;
+  font-size: 1.2rem;
 }
 .navbar .top i {
   margin-left: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
 }
 .navbar hr {
   opacity: 0.3;
@@ -171,11 +183,13 @@
 }
 .browser_container .browser .intro h2 {
   font-family: "Trocchi", serif;
+  color: black;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 .browser_container .browser .intro p {
   font-size: 1.2rem;
+  color: black;
   max-width: 50%;
   margin: auto;
 }
@@ -194,6 +208,7 @@
      object-fit: cover;
 }
 .browser_container .browser .category_card .card span {
+  color: black;
   display: block;
   padding-top: 1rem;
   font-size: 1.2rem;
@@ -218,7 +233,6 @@
   text-transform: capitalize;
 }
 .browser_container .browser .type_food .box span {
-  color: white;
   margin: 0 auto;
   color: #3d6f42;
   font-size: 1.3rem;
@@ -234,9 +248,9 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold;
+  background-color: #3d6f42;
   color: white;
   margin: 0 auto;
-  background-color: #3d6f42;
   margin-bottom: 2rem;
 }
 .browser_container .browser .new_arrivals {
@@ -266,8 +280,8 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold;
-  color: black;
   background-color: white;
+  color: black;
 }
 .browser_container .browser .best_sellers .top {
   display: flex;
@@ -281,6 +295,7 @@
 }
 .browser_container .browser .best_sellers .top h2 {
   font-family: "Trocchi", serif;
+  color: black;
   font-size: 3rem;
   padding-top: 1.5rem;
 }
@@ -289,8 +304,8 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold;
-  color: white;
   background-color: #3d6f42;
+  color: white;
 }
 .browser_container .browser .best_sellers .bottom {
   display: flex;
@@ -309,6 +324,7 @@
 .browser_container .browser .best_sellers .bottom .card span:nth-of-type(1) {
   margin: 1rem 0;
   font-size: 1.3rem;
+  color: black;
 }
 .browser_container .browser .best_sellers .bottom .card span:nth-of-type(2) {
   color: #3d6f42;
@@ -357,7 +373,7 @@
   text-align: center;
 }
 .testimonial .container .reviews .review span {
-  color: rgba(255, 255, 255, 0.623);
+  color: #696666;
 }
 .testimonial .container .join_newsletter {
   width: 100%;
@@ -376,25 +392,17 @@
   font-size: 1.4rem;
   max-width: 50%;
   padding: 1.5rem 0;
+  color: black;
 }
 .testimonial .container .join_newsletter input {
-  width: 30%;
   height: 50px;
   border-radius: 2rem;
   border: none;
+  outline: none;
+  background-color: #f8f5f2;
+  padding-left: 1rem;
+  width: 30%;
   margin: 4rem 2rem 0 0;
-}
-.testimonial .container .join_newsletter input:-moz-placeholder-shown {
-  background-color: lightgray;
-  padding-left: 1rem;
-}
-.testimonial .container .join_newsletter input:-ms-input-placeholder {
-  background-color: lightgray;
-  padding-left: 1rem;
-}
-.testimonial .container .join_newsletter input:placeholder-shown {
-  background-color: lightgray;
-  padding-left: 1rem;
 }
 .testimonial .container .join_newsletter a {
   text-decoration: none;
@@ -429,10 +437,12 @@
   font-size: 1.3rem;
   max-width: 80%;
   line-height: 2rem;
+  color: black;
 }
 .testimonial .container .articles .article span {
   padding-left: 2rem;
   font-size: 0.8rem;
+  color: #696666;
 }
 .testimonial .container a {
   text-decoration: none;
@@ -445,7 +455,6 @@
 }
 
 .information {
-  background-color: lightgreen;
   display: flex;
   flex-wrap: wrap;
 }
@@ -475,8 +484,8 @@
   padding: 1rem 2rem;
   border-radius: 2rem;
   font-weight: bold;
-  color: black;
   background-color: white;
+  color: black;
 }
 .information .left {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-8-2x.jpg);
@@ -525,9 +534,11 @@
   font-family: "Trocchi", serif;
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: black;
 }
 .new_products .container > span {
   font-size: 1.2rem;
+  font-weight: 500;
   color: #3d6f42;
 }
 .new_products .container .products_container {
@@ -550,6 +561,7 @@
 .new_products .container .products_container .card p {
   margin: 1rem 0;
   font-size: 1.3rem;
+  color: black;
 }
 .new_products .container .products_container .card span {
   color: #3d6f42;
@@ -569,7 +581,7 @@ footer .conection_footer {
 footer .conection_footer .top {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 footer .conection_footer .top .box {
   width: calc((100% / 4 ) - 4rem);
@@ -583,10 +595,12 @@ footer .conection_footer .top .box span {
   display: block;
   font-size: 1.2rem;
   line-height: 2rem;
+  color: white;
 }
 footer .conection_footer .top .box h2 {
   font-weight: 500;
   font-size: 1.7rem;
+  color: white;
 }
 footer .conection_footer .top .box ul {
   list-style: none;
@@ -612,23 +626,14 @@ footer .conection_footer .top .box:last-of-type {
   border-radius: 0.5rem;
 }
 footer .conection_footer .top .box:last-of-type input {
-  width: 100%;
   height: 50px;
   border-radius: 2rem;
   border: none;
+  outline: none;
+  background-color: #f8f5f2;
+  padding-left: 1rem;
+  width: 100%;
   margin: 2rem 0;
-}
-footer .conection_footer .top .box:last-of-type input:-moz-placeholder-shown {
-  background-color: lightgray;
-  padding-left: 1rem;
-}
-footer .conection_footer .top .box:last-of-type input:-ms-input-placeholder {
-  background-color: lightgray;
-  padding-left: 1rem;
-}
-footer .conection_footer .top .box:last-of-type input:placeholder-shown {
-  background-color: lightgray;
-  padding-left: 1rem;
 }
 footer .conection_footer .top .box:last-of-type a {
   text-decoration: none;

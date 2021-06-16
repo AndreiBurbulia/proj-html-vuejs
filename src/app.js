@@ -148,7 +148,7 @@ const app = new Vue({
             },
             {
                 url: './dist/img/product-3-500x500.jpg',
-                name: 'Dob bone',
+                name: 'Dog bone',
                 price: '$18.00',
             },
             {

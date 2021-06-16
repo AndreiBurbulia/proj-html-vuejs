@@ -1,5 +1,4 @@
 .testimonial{
-    // height: 800px;
     background-image:url(/dist/img/bg-transparent-3.png), linear-gradient(to bottom, $bg_for_pattern 0px, $bg_for_pattern 600px, white 148px, white 100%);
     background-repeat: repeat-x;
 
@@ -13,7 +12,7 @@
 
         h2{
             font-family: $font_title;
-            color: white;
+            color: $primary_color_text;
             font-size: 2rem;
             margin-top: 4rem;
         }
@@ -36,13 +35,13 @@
                     width: 30%;
                 }
                 p{
-                    color: white;
+                    color: $primary_color_text;
                     margin: 2rem 0;
                     width: 70%;
                     text-align: center;
                 }
                 span{
-                    color: rgba(255, 255, 255, 0.623);
+                    color: $details_color;
                 }
             }
         }
@@ -57,7 +56,7 @@
             
 
             h2{
-                color: black;
+                color: $secondary_color_text;
                 font-size: 3rem;
                 font-family: $font_title;
             }
@@ -66,30 +65,24 @@
                 font-size: 1.4rem;
                 max-width: 50%;
                 padding: 1.5rem 0;
+                color: $secondary_color_text
             }
 
             input{
+                @include input_text_style;
                 width: 30%;
-                height: 50px;
-                border-radius: 2rem;
-                border: none;
                 margin: 4rem 2rem 0 0;
             }
 
-            input:placeholder-shown{
-                background-color: lightgray;
-                padding-left: 1rem
-            }
 
             a{
                 @include button_style;
-                background-color: $primary_color_button;
-                color: white;
+                @include dark_button;
             }
         }
 
         h2:nth-of-type(2){
-            color: black;
+            color:$secondary_color_text;
         }
 
         & > span{
@@ -115,11 +108,13 @@
                     font-size: 1.3rem;
                     max-width: 80%;
                     line-height: 2rem;
+                    color: $secondary_color_text;
                 }
 
                 span{
                     padding-left:2rem;
                     font-size: 0.8rem;
+                    color: $details_color
                 }
 
             }
@@ -127,8 +122,7 @@
 
         a{
             @include button_style;
-            background-color: $primary_color_button;
-            color: white;
+            @include dark_button;
             margin: 4rem 0;
         }
     }

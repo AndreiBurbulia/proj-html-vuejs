@@ -1,7 +1,6 @@
 .information{
-    background-color: lightgreen;
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 
 
     .left, .right{
@@ -14,7 +13,7 @@
         background-size: cover;
 
         span{
-                color: white;
+                color: $primary_color_text;
                 text-transform: uppercase;
                 font-weight: 500;
             }
@@ -22,13 +21,12 @@
                 font-family: $font_title;
                 font-size: 4rem;
                 font-weight: 400;
-                color: white;
+                color: $primary_color_text;
                 margin: 2.5rem 0;
             }
             a{
                 @include button_style;
-                color: black;
-                background-color: white;
+                @include light_button;
             }
     }
 
@@ -55,7 +53,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                color: white;
+                color: $primary_color_text;
 
                 i{
                     font-size: 4rem;

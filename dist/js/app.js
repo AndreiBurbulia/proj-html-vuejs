@@ -123,7 +123,7 @@ var app = new Vue({
       price: '$29.00'
     }, {
       url: './dist/img/product-3-500x500.jpg',
-      name: 'Dob bone',
+      name: 'Dog bone',
       price: '$18.00'
     }, {
       url: './dist/img/product-4-500x500.jpg',

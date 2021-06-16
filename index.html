@@ -161,6 +161,30 @@
             </div>
 
             <!-- Testimonial Setion  -->
+            <div class="testimonial">
+                <div class="container">
+
+                    <h2>Users testimonials</h2>
+                    <div class="reviews">
+                        <div class="review" v-for="element in reviews">
+                            <img :src="element.url" alt="element.description">
+                            <p>{{ element.description }}</p>
+                            <span>{{ element.name }}, {{element.theme}}</span>
+                        </div>
+                    </div>
+                    <div class="join_newsletter">
+                        <h2>Join our newsletter</h2>
+                        <p>Volupat vel turpis nulla lorem sed semper. Aliquam sagittis libero viverra vehicula nullam ut nisl.</p>
+                        <input type="text" name="" id="" placeholder="Insert your email...*">
+                        <a href="#">Subscribe</a>
+                    </div>
+                    <h2>Get the best tips & tricks</h2>
+                    <span>recent articles</span>
+                    <div class="articles">c</div>
+                    <a href="#">Read all articles</a>
+                </div>
+
+            </div>
             <!-- Information Section -->
             <!-- New Product Section -->
         </main>

@@ -315,4 +315,88 @@
   font-weight: 500;
 }
 
+.testimonial {
+  background-image: url(/dist/img/bg-transparent-3.png), linear-gradient(to bottom, #1e3120 0px, #1e3120 500px, white 148px, white 100%);
+  background-repeat: repeat-x;
+}
+.testimonial .container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .container h2 {
+  font-family: "Trocchi", serif;
+  color: white;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.testimonial .container .reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.testimonial .container .reviews .review {
+  width: calc((100% /3 ) - 3rem);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .container .reviews .review img {
+  border-radius: 50%;
+  width: 30%;
+}
+.testimonial .container .reviews .review p {
+  color: white;
+  margin: 2rem 0;
+  width: 70%;
+  text-align: center;
+}
+.testimonial .container .reviews .review span {
+  color: rgba(255, 255, 255, 0.623);
+}
+.testimonial .container .join_newsletter {
+  width: 100%;
+  height: 500px;
+  background-image: url(/dist/img/banner-7-2x-scaled.jpg);
+  background-size: cover;
+  padding: 3rem 0 3rem 4rem;
+}
+.testimonial .container .join_newsletter h2 {
+  color: black;
+  font-size: 3rem;
+}
+.testimonial .container .join_newsletter p {
+  font-size: 1.4rem;
+  max-width: 50%;
+  padding: 1.5rem 0;
+}
+.testimonial .container .join_newsletter input {
+  width: 30%;
+  height: 45px;
+  border-radius: 1rem;
+  border: none;
+}
+.testimonial .container .join_newsletter input:-moz-placeholder-shown {
+  background-color: lightgray;
+}
+.testimonial .container .join_newsletter input:-ms-input-placeholder {
+  background-color: lightgray;
+}
+.testimonial .container .join_newsletter input:placeholder-shown {
+  background-color: lightgray;
+}
+.testimonial .container .join_newsletter a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+}
+
 /*********** Footer ***********/

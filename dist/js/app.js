@@ -79,6 +79,22 @@ var app = new Vue({
       url: '/dist/img/product-11-400x400.jpg',
       price: '12.00',
       offPrice: false
+    }],
+    reviews: [{
+      url: './dist/img/avatar-3-200x200.jpg',
+      name: 'Lisa Smith',
+      theme: 'ThemeFusion',
+      description: 'Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.'
+    }, {
+      url: './dist/img/avatar-1-200x200.jpg',
+      name: 'Melissa Green',
+      theme: 'ThemeFusion',
+      description: 'Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat vestibulum ac diam sit.'
+    }, {
+      url: './dist/img/avatar-4-200x200.jpg',
+      name: 'Sam Lewis',
+      theme: 'ThemeFusion',
+      description: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor rius vestibulum ante ipsum.'
     }]
   },
   methods: {}

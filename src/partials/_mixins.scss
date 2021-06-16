@@ -1,0 +1,17 @@
+@mixin container_size_and_center {
+    width: $width_principal_container;
+    margin: auto;
+}
+
+@mixin bg_with_pattern {
+    width: 100%;
+    background-color: $bg_for_pattern;
+    background-image: url(/dist/img/bg-transparent-3.png);
+}
+
+@mixin button_style {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}

@@ -99,11 +99,11 @@
 }
 .jumbotron .middle .container a {
   text-decoration: none;
-  background-color: white;
   padding: 1rem 2rem;
-  color: black;
   border-radius: 2rem;
   font-weight: bold;
+  background-color: white;
+  color: black;
 }
 .jumbotron .bottom {
   width: 100%;
@@ -230,20 +230,19 @@
   margin: 3rem auto;
 }
 .browser_container .browser .type_food .box a {
-  color: white;
-  margin: 0 auto;
   text-decoration: none;
-  background-color: #5ba366;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  font-weight: 500;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  background-color: #5ba366;
   margin-bottom: 2rem;
 }
 .browser_container .browser .new_arrivals {
   height: 600px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-3-2x-scaled.jpg);
   background-size: 100% 100%;
-  background-color: yellow;
   margin: 7rem 0;
   display: flex;
   justify-content: center;
@@ -265,10 +264,10 @@
 .browser_container .browser .new_arrivals a {
   text-decoration: none;
   padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
   color: black;
   background-color: white;
-  border-radius: 2rem;
-  font-weight: 500;
 }
 .browser_container .browser .best_sellers .top {
   display: flex;
@@ -286,12 +285,12 @@
   padding-top: 1.5rem;
 }
 .browser_container .browser .best_sellers .top a {
-  color: white;
   text-decoration: none;
-  background-color: #5ba366;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  font-weight: 500;
+  font-weight: bold;
+  color: white;
+  background-color: #5ba366;
 }
 .browser_container .browser .best_sellers .bottom {
   display: flex;

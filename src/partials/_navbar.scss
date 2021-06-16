@@ -1,8 +1,7 @@
 .navbar{
 
     .top{
-        width: $width_principal_container;
-        margin: auto;
+        @include container_size_and_center;
         
         display: flex;
         justify-content: space-between;
@@ -29,8 +28,7 @@
     }
 
     .bottom{
-        width: $width_principal_container;
-        margin: auto;
+        @include container_size_and_center;
         padding: 1rem 0;
         display: flex;
         justify-content: center;

@@ -1,13 +1,10 @@
 .jumbotron{
     position: relative;
     .top{
-        width: 100%;
-        background-color: $bg_for_pattern;
-        background-image: url(/dist/img/bg-transparent-3.png);
+        @include bg_with_pattern;
 
         .container{
-            width: $width_principal_container;
-            margin: auto;
+            @include container_size_and_center;
             display: flex;
             justify-content: space-around;
             padding: 2rem 0;
@@ -25,8 +22,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         .container{
-            width: $width_principal_container;
-            margin: auto;
+            @include container_size_and_center;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -46,16 +42,13 @@
                 font-size: 4rem;
                 font-weight: 400;
                 margin: 3rem 0;
-                font-family: 'Trocchi', serif;
+                font-family: $font_title;
             }
 
             a{
-                text-decoration: none;
+                @include button_style;
                 background-color: white;
-                padding: 1rem 2rem;
                 color: black;
-                border-radius: 2rem;
-                font-weight: bold;
 
             }
 
@@ -63,12 +56,10 @@
     }
 
     .bottom{
-        width: 100%;
-        background-color: $bg_for_pattern;
-        background-image: url(/dist/img/bg-transparent-3.png);
+        @include bg_with_pattern;
+        
         .container{
-            width: $width_principal_container;
-            margin: auto;
+            @include container_size_and_center;
             display: flex;
             justify-content: center;
             align-items: center;

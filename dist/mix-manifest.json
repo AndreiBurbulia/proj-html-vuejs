@@ -16,6 +16,7 @@
     "/img/banner-3-2x-scaled.jpg": "/img/banner-3-2x-scaled.jpg",
     "/img/banner-5-2x-scaled.jpg": "/img/banner-5-2x-scaled.jpg",
     "/img/banner-7-2x-scaled.jpg": "/img/banner-7-2x-scaled.jpg",
+    "/img/banner-7@2x-scaled.webp": "/img/banner-7@2x-scaled.webp",
     "/img/banner-8-2x.jpg": "/img/banner-8-2x.jpg",
     "/img/banner-9-2x.jpg": "/img/banner-9-2x.jpg",
     "/img/bg-transparent-3.png": "/img/bg-transparent-3.png",
@@ -174,6 +175,5 @@
     "/img/product-9-768x768.jpg": "/img/product-9-768x768.jpg",
     "/img/product-9-800x800.jpg": "/img/product-9-800x800.jpg",
     "/img/product-9.jpg": "/img/product-9.jpg",
-    "/img/search-big.svg": "/img/search-big.svg",
-    "/img/banner-7@2x-scaled.webp": "/img/banner-7@2x-scaled.webp"
+    "/img/search-big.svg": "/img/search-big.svg"
 }

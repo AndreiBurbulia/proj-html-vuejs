@@ -157,6 +157,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    .img_container{
+                    position: relative;
+
+                    }
 
                     img{
                         width: 100%;
@@ -175,6 +179,16 @@
                         font-size: 0.7rem;
                         text-decoration: line-through;
                     }
+
+                    .hover_box{
+                        @include box_for_hover;
+
+                        @include content_of_hover_box;
+                    }
+                }
+
+                .card:hover .hover_box{
+                    visibility: visible;
                 }
 
             }

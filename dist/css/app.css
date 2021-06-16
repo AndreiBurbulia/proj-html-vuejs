@@ -346,6 +346,9 @@
   justify-content: center;
   align-items: center;
 }
+.browser_container .browser .best_sellers .bottom .card .img_container {
+  position: relative;
+}
 .browser_container .browser .best_sellers .bottom .card img {
   width: 100%;
 }
@@ -362,6 +365,34 @@
 .browser_container .browser .best_sellers .bottom .card .offPrice {
   font-size: 0.7rem;
   text-decoration: line-through;
+}
+.browser_container .browser .best_sellers .bottom .card .hover_box {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.browser_container .browser .best_sellers .bottom .card .hover_box span {
+  width: 80px;
+  height: 80px;
+}
+.browser_container .browser .best_sellers .bottom .card .hover_box span i {
+  font-size: 80px;
+  color: white;
+}
+.browser_container .browser .best_sellers .bottom .card .hover_box a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  font-weight: 500;
+}
+.browser_container .browser .best_sellers .bottom .card:hover .hover_box {
+  visibility: visible;
 }
 
 .testimonial {
@@ -462,6 +493,30 @@
 .testimonial .container .articles .article {
   width: calc((100% / 4) - 3rem);
 }
+.testimonial .container .articles .article .img_container {
+  position: relative;
+}
+.testimonial .container .articles .article .img_container .hover_box {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial .container .articles .article .img_container .hover_box span:nth-of-type(1) {
+  color: white;
+  padding-right: 1.5wrem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.testimonial .container .articles .article .img_container .hover_box span:nth-of-type(2) {
+  color: white;
+}
 .testimonial .container .articles .article img {
   width: 100%;
 }
@@ -476,6 +531,9 @@
   padding-left: 2rem;
   font-size: 0.8rem;
   color: #696666;
+}
+.testimonial .container .articles .article:hover .hover_box {
+  visibility: visible;
 }
 .testimonial .container a {
   text-decoration: none;
@@ -589,6 +647,36 @@
   margin: 2rem 0;
   position: relative;
 }
+.new_products .container .products_container .card .img_container {
+  position: relative;
+}
+.new_products .container .products_container .card .img_container .prova {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+}
+.new_products .container .products_container .card .img_container .prova span {
+  width: 80px;
+  height: 80px;
+}
+.new_products .container .products_container .card .img_container .prova span i {
+  font-size: 80px;
+  color: white;
+}
+.new_products .container .products_container .card .img_container .prova a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  font-weight: 500;
+}
 .new_products .container .products_container .card img {
   width: 100%;
 }
@@ -612,6 +700,9 @@
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+}
+.new_products .container .products_container .card:hover .prova {
+  visibility: visible;
 }
 
 /*********** Footer ***********/

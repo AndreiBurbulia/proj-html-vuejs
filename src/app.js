@@ -118,21 +118,25 @@ const app = new Vue({
                 title: "How to 'loose leash walk' your dog",
                 date: 'April 21st, 2020',
                 url: './dist/img/blog-1-400x400.jpg',
+                category: 'Tips & Tricks',
             },
             {
                 title: "Stop cats from scratching furniture",
                 date: 'April 19th, 2020',
                 url: './dist/img/blog-2-400x400.jpg',
+                category: 'Tips & Tricks',
             },
             {
                 title: "Where to buy the best pet food",
                 date: 'April 18th, 2020',
                 url: './dist/img/blog-3-400x400.jpg',
+                category: 'Tips & Tricks',
             },
             {
                 title: "Proper care for your pet toys",
                 date: 'April 17th, 2020',
                 url: './dist/img/blog-4-400x400.jpg',
+                category: 'Tips & Tricks',
             },
         ],
         newProducts: [

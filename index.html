@@ -149,7 +149,15 @@
                         <!-- Bottom Best Sellers -->
                         <div class="bottom">
                             <div class="card" v-for="prod in topSellers">
-                                <img :src="prod.url" alt="prod.name">
+                                <div class="img_container">
+                                    <div class="hover_box">
+                                        <span>
+                                            <i class="far fa-check-circle"></i>
+                                        </span>
+                                        <a href="#">VIEW CART</a>
+                                    </div>
+                                    <img :src="prod.url" alt="prod.name">
+                                </div>
                                 <span>{{prod.name}}</span>
                                 <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
                                 <div v-else>
@@ -193,7 +201,14 @@
                     <!-- Card Articles -->
                     <div class="articles">
                         <div class="article" v-for=" element in articles">
-                            <img :src="element.url" alt="element.title">
+                            <div class="img_container">
+                                <div class="hover_box">
+                                    <span>{{element.title}}</span>
+                                    <span>{{element.category}}</span>
+                                </div>
+                                <img :src="element.url" alt="element.title">
+
+                            </div>
                             <p>{{element.title}}</p>
                             <span>{{element.date}}</span>
                         </div>
@@ -256,7 +271,15 @@
                     <!-- Card with new products -->
                     <div class="products_container">
                         <div class="card" v-for="prod in newProducts">
-                            <img :src="prod.url" alt="prod.name">
+                            <div class="img_container">
+                                <img :src="prod.url" alt="prod.name">
+                                <div class="prova">
+                                    <span>
+                                        <i class="far fa-check-circle"></i>
+                                    </span>
+                                    <a href="#">VIEW CART</a>
+                                </div>
+                            </div>
                             <p>{{prod.name}}</p>
                             <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
                             <div v-else>

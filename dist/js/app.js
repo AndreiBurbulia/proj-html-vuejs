@@ -156,11 +156,11 @@ var app = new Vue({
     }],
     cart: [],
     indexInfoProd: 0,
-    totalPriceCart: 0
+    totalPriceCart: 0,
+    valueScroll: 0
   },
   methods: {
     moreInfo: function moreInfo(index) {
-      console.log(index);
       this.indexInfoProd = index;
     },
     closeSpecificInfo: function closeSpecificInfo() {
@@ -170,12 +170,18 @@ var app = new Vue({
       document.querySelector(".more_info").style.visibility = " visible";
     },
     addToCart: function addToCart(index) {
-      console.log(this.newProducts[index]);
       this.cart.push(this.newProducts[index]);
       this.totalPriceCart += parseInt(this.newProducts[index].price);
     }
   },
-  mounted: function mounted() {},
+  mounted: function mounted() {
+    var _this = this;
+
+    window.addEventListener("scroll", function (e) {
+      console.log(scrollY);
+      _this.valueScroll = scrollY;
+    });
+  },
   computed: {}
 });
 

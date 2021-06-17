@@ -171,6 +171,12 @@
   font-weight: bold;
   margin: 0 1rem;
 }
+.navbar .bottom a:hover {
+  color: black;
+}
+.navbar .bottom a:hover i {
+  color: red;
+}
 
 .jumbotron {
   position: relative;
@@ -244,7 +250,7 @@
   align-items: center;
 }
 .jumbotron .bottom .container img {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .jumbotron .bottom .container span {
   color: white;
@@ -254,6 +260,11 @@
 .jumbotron .bottom .container a {
   color: white;
   font-size: 1.3rem;
+}
+.jumbotron .bottom_fixed {
+  position: fixed;
+  top: 0;
+  z-index: 20;
 }
 .jumbotron .small_box {
   height: 80px;
@@ -268,6 +279,7 @@
   align-items: center;
   flex-direction: column;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.192);
+  z-index: 20;
 }
 .jumbotron .small_box i {
   font-size: 2.5rem;

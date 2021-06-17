@@ -186,11 +186,11 @@ const app = new Vue({
         cart: [],
         indexInfoProd: 0,
         totalPriceCart: 0,
+        valueScroll: 0,
 
     },
     methods: {
         moreInfo(index) {
-            console.log(index);
             this.indexInfoProd = index;
         },
 
@@ -202,14 +202,16 @@ const app = new Vue({
         },
 
         addToCart(index) {
-            console.log(this.newProducts[index]);
             this.cart.push(this.newProducts[index]);
             this.totalPriceCart += parseInt(this.newProducts[index].price);
         }
     },
 
     mounted() {
-
+        window.addEventListener("scroll", (e) => {
+            console.log(scrollY);
+            this.valueScroll = scrollY;
+        })
     },
 
     computed: {

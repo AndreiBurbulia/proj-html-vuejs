@@ -145,42 +145,65 @@ const app = new Vue({
                 name: 'Colored pet bed',
                 price: '$18.00 - $26.00',
                 offPrice: false,
+                star: 5,
             },
             {
                 url: './dist/img/product-2-500x500.jpg',
                 name: 'Colorful ball set',
                 price: '$29.00',
                 offPrice: false,
+                star: 5,
             },
             {
                 url: './dist/img/product-3-500x500.jpg',
                 name: 'Dog bone',
                 price: '$29.00',
                 offPrice: '$18.00',
+                star: 4,
             },
             {
                 url: './dist/img/product-4-500x500.jpg',
                 name: 'Animal transport bag',
                 price: '$29.00',
                 offPrice: false,
+                star: 3,
             },
             {
                 url: './dist/img/product-5-500x500.jpg',
                 name: 'Animal transport cage',
                 price: '$35.00',
                 offPrice: false,
+                star: 5,
             },
             {
                 url: './dist/img/product-10-500x500.jpg',
                 name: 'Closable cat litter',
                 price: '$16.00',
                 offPrice: false,
+                star: 5,
             },
         ],
+        cart: [],
+        indexInfoProd: 0,
 
     },
     methods: {
+        moreInfo(index) {
+            console.log(index);
+            this.indexInfoProd = index;
+        },
 
+        closeSpecificInfo() {
+            document.querySelector(".more_info").style.visibility = " hidden";
+        },
+        openSpecificInfo() {
+            document.querySelector(".more_info").style.visibility = " visible";
+        },
+
+        addToCart(index) {
+            console.log(this.newProducts[index]);
+            this.cart.push(this.newProducts[index]);
+        }
     },
 
     mounted() {

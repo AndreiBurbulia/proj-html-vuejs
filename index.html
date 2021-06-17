@@ -19,6 +19,8 @@
     <div id="app">
         <!-- Site Header -->
         <header id="site_header">
+
+            <!-- Navbar -->
             <nav class="navbar">
 
                 <!-- Top -->
@@ -47,6 +49,8 @@
                 </div>
 
             </nav>
+            <!-- /Navbar -->
+
 
             <!-- Jumbotron -->
             <div class="jumbotron">
@@ -96,11 +100,15 @@
                 </div>
 
             </div>
+            <!-- /Jumbotron -->
+
+
         </header>
         <!-- /Site Header -->
 
         <!-- Site Main -->
         <main id="site_main">
+
             <!-- Browser Section -->
             <div class="browser_container">
                 <div class="browser">
@@ -170,6 +178,8 @@
                     </div>
                 </div>
             </div>
+            <!-- /Browser Section -->
+
 
             <!-- Testimonial Setion  -->
             <div class="testimonial">
@@ -218,6 +228,7 @@
                 </div>
 
             </div>
+            <!-- /Testimonial Setion  -->
 
 
             <!-- Information Section -->
@@ -259,6 +270,7 @@
                     </div>
                 </div>
             </div>
+            <!-- /Information Section -->
 
 
             <!-- New Product Section -->
@@ -270,16 +282,23 @@
 
                     <!-- Card with new products -->
                     <div class="products_container">
-                        <div class="card" v-for="prod in newProducts">
+
+                        <div class="card" v-for="(prod, index) in newProducts">
                             <div class="img_container">
                                 <img :src="prod.url" alt="prod.name">
                                 <div class="prova">
-                                    <span>
+                                    <!-- <span>
                                         <i class="far fa-check-circle"></i>
-                                    </span>
-                                    <a href="#">VIEW CART</a>
+                                    </span> -->
+                                    <div>
+                                        <span @click="addToCart(index)">Add to Cart <i class="fas fa-cart-plus"></i> /</span>
+                                        <span @click="moreInfo(index), openSpecificInfo()">More Info</span>
+                                    </div>
+                                    <a href="#">View Cart</a>
                                 </div>
                             </div>
+
+
                             <p>{{prod.name}}</p>
                             <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
                             <div v-else>
@@ -292,7 +311,30 @@
                     </div>
                 </div>
 
+                <!-- Box with more info of product -->
+                <div class="more_info">
+                    <div class="specific_info">
+                        <i class="fas fa-times" @click="closeSpecificInfo()"></i>
+                        <img :src="newProducts[indexInfoProd].url" alt="">
+                        <div>
+                            <span>{{newProducts[indexInfoProd].name}}</span>
+                            <div>
+                                <span>{{newProducts[indexInfoProd].price}}</span>
+                                <span v-for="x in newProducts[indexInfoProd].star"><i class="fas fa-star"></i></span>
+                                <span>(1 customers review)</span>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo impedit iste eos? Delectus accusamus voluptates laborum vero quam eaque laboriosam, voluptatum iure dolorum itaque ea nulla dolore adipisci debitis optio dolores impedit ad. Atque cumque minus sunt mollitia deleniti amet?
+                            </p>
+                            <a href="#" @click="addToCart(indexInfoProd)">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+            <!-- /New Product Section -->
+
         </main>
         <!-- /Site Main -->
 

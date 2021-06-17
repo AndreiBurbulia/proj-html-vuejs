@@ -79,6 +79,13 @@
   height: 80px;
   display: flex;
   margin-bottom: 5px;
+  position: relative;
+}
+.navbar .top .cart_user .cart .cart_line i {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.7rem;
 }
 .navbar .top .cart_user .cart .cart_line img {
   height: 70px;
@@ -100,6 +107,9 @@
 }
 .navbar .top .cart_user .cart .cart_line:hover {
   background-color: #264229;
+}
+.navbar .top .cart_user .cart .cart_line:hover i {
+  color: white;
 }
 .navbar .top .cart_user .cart .cart_line:hover span {
   color: white;

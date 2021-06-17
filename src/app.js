@@ -212,12 +212,17 @@ const app = new Vue({
                 document.querySelector(".fa-shopping-bag").classList.remove("zoom_icon");
 
             }, 2000)
+        },
+
+        deleteProd(index) {
+            this.totalPriceCart -= parseInt(this.cart[index].price);
+            this.cart.splice(index, 1);
+
         }
     },
 
     mounted() {
         window.addEventListener("scroll", (e) => {
-            console.log(scrollY);
             this.valueScroll = scrollY;
         })
     },

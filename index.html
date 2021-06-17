@@ -44,7 +44,8 @@
                         <i class="far fa-user"></i>
 
                         <div class="cart" v-if="totalPriceCart > 0">
-                            <div class="cart_line" v-for="prod in cart">
+                            <div class="cart_line" v-for="(prod, index) in cart">
+                                <i class="fas fa-times" @click="deleteProd(index)"></i>
                                 <img :src="prod.url" alt="">
                                 <div>
                                     <span>{{prod.name}}</span>

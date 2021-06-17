@@ -64,6 +64,13 @@
                     height: 80px;
                     display: flex;
                     margin-bottom: 5px;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        font-size: 0.7rem;
+                    }
                     img{
                         height: 70px;
                         margin: 5px 5px;
@@ -87,6 +94,9 @@
 
                 .cart_line:hover{
                     background-color: $bg_light;
+                    i{
+                        color: white;
+                    }
                     span{
                         color: $primary_color_text;
                     }

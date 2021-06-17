@@ -179,13 +179,16 @@ var app = new Vue({
       setTimeout(function () {
         document.querySelector(".fa-shopping-bag").classList.remove("zoom_icon");
       }, 2000);
+    },
+    deleteProd: function deleteProd(index) {
+      this.totalPriceCart -= parseInt(this.cart[index].price);
+      this.cart.splice(index, 1);
     }
   },
   mounted: function mounted() {
     var _this = this;
 
     window.addEventListener("scroll", function (e) {
-      console.log(scrollY);
       _this.valueScroll = scrollY;
     });
   },

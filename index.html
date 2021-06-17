@@ -31,9 +31,22 @@
                         <input type="search" placeholder="Search...">
                     </div>
                     <span><strong>Questions?</strong> Call us: 1:800,123,4567</span>
-                    <div>
+                    <div class="cart_user">
                         <i class="fas fa-shopping-bag"></i>
                         <i class="far fa-user"></i>
+                        <div class="cart">
+                            <div class="cart_line" v-for="prod in cart">
+                                <img :src="prod.url" alt="">
+                                <div>
+                                    <span>{{prod.name}}</span>
+                                    <span>{{prod.price}} $</span>
+                                </div>
+                            </div>
+
+                            <div class="total_line">
+                                <span>Total: {{totalPriceCart}} $</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

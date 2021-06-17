@@ -287,6 +287,9 @@
 .jumbotron .small_box i {
   font-size: 2.5rem;
 }
+.jumbotron .small_box img {
+  height: 60%;
+}
 .jumbotron .small_box span {
   font-size: 2rem;
   font-weight: bold;

@@ -188,18 +188,113 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.navbar .bottom a {
+.navbar .bottom > a {
   text-decoration: none;
   color: #978f88;
   font-weight: bold;
   margin: 0 1rem;
 }
-.navbar .bottom a:hover {
+.navbar .bottom > a:hover {
   color: black;
 }
-.navbar .bottom a:hover i {
+.navbar .bottom > a:hover i {
   color: #264229;
+}
+.navbar .bottom > a:nth-of-type(1):hover ~ .dropdown_home {
+  visibility: visible;
+}
+.navbar .bottom .dropdown_home:hover {
+  visibility: visible;
+  background-color: #3d6f42;
+}
+.navbar .bottom .dropdown_home:hover a {
+  color: white;
+}
+.navbar .bottom .dropdown_home {
+  visibility: hidden;
+  z-index: 30;
+  background-color: #dfdfdf;
+  position: absolute;
+  margin-top: 2rem;
+  left: 482px;
+  padding: 1rem;
+  bottom: -35px;
+}
+.navbar .bottom .dropdown_home a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .bottom .dropdown_shop {
+  visibility: hidden;
+  z-index: 30;
+  background-color: #dfdfdf;
+  position: absolute;
+  margin-top: 2rem;
+  left: 578px;
+  bottom: -192px;
+}
+.navbar .bottom .dropdown_shop a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+.navbar .bottom .dropdown_shop a:hover {
+  background-color: #3d6f42;
+  color: white;
+}
+.navbar .bottom > a:nth-of-type(2):hover ~ .dropdown_shop {
+  visibility: visible;
+}
+.navbar .bottom .dropdown_shop:hover {
+  visibility: visible;
+}
+.navbar .bottom .dropdown_brand {
+  visibility: hidden;
+  z-index: 30;
+  background-color: #dfdfdf;
+  position: absolute;
+  margin-top: 2rem;
+  width: 99vw;
+  display: flex;
+  top: 3px;
+}
+.navbar .bottom .dropdown_brand .brand_slot {
+  width: calc(100%/3);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 160%;
+  background-position-y: -23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+.navbar .bottom .dropdown_brand .brand_slot h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+.navbar .bottom .dropdown_brand .brand_slot:nth-of-type(1) {
+  background-color: #E5EFE5;
+  background-image: url(../../dist/img/food-transparent-16-400x420.png);
+}
+.navbar .bottom .dropdown_brand .brand_slot:nth-of-type(2) {
+  background-color: #FBF5F3;
+  background-image: url(../../dist/img/food-transparent-18-400x420.png);
+}
+.navbar .bottom .dropdown_brand .brand_slot:nth-of-type(3) {
+  background-color: #E4F0F1;
+  background-image: url(../../dist/img/food-transparent-17-400x420.png);
+}
+.navbar .bottom > a:nth-of-type(6):hover ~ .dropdown_brand {
+  visibility: visible;
+}
+.navbar .bottom .dropdown_brand:hover {
+  visibility: visible;
 }
 
 .jumbotron {

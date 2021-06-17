@@ -69,6 +69,28 @@
                         <i class="fas fa-chevron-down" v-if="voice.submenu"></i>
                     </a>
 
+                    <div class="dropdown_home">
+                        <a href="#">Home - Alternate</a>
+                    </div>
+
+                    <div class="dropdown_shop">
+                        <a href="#" v-for="element in category">{{element.name}}</a>
+                    </div>
+
+                    <div class="dropdown_brand">
+                        <div class="brand_slot">
+                            <h2>Frozen</h2>
+                            <span>Freeze-Dried dog food</span>
+                        </div>
+                        <div class="brand_slot">
+                            <h2>Kibble</h2>
+                            <span>Dry dog food</span>
+                        </div>
+                        <div class="brand_slot">
+                            <h2>Moist</h2>
+                            <span>Canned dog food</span>
+                        </div>
+                    </div>
                 </div>
 
             </nav>

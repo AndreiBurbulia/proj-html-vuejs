@@ -185,20 +185,120 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
-        a{
+        &>a{
             text-decoration: none;
             color: $color_voice_navbar;
             font-weight: bold;
             margin: 0 1rem;
         }
 
-        a:hover{
+        &>a:hover{
             color: black;
             i{
                 color: $bg_light;
             }
         }
+
+        &>a:nth-of-type(1):hover ~ .dropdown_home{
+            visibility: visible;
+        }
+        .dropdown_home:hover{
+            visibility: visible;
+            background-color: $primary_color_button;
+            a{
+            color: white;
+
+            }
+
+        }
+
+        .dropdown_home{
+            visibility: hidden;
+            @include dropdown_style;
+            left: 482px;
+            padding: 1rem;
+            bottom: -35px;
+            a{
+                text-decoration: none;
+                color: $color_voice_dropdown;
+            }
+        }
+
+        .dropdown_shop{
+            visibility: hidden;
+            @include dropdown_style;
+            left: 578px;
+            bottom: -192px;
+
+            a{
+                display: block;
+                text-decoration: none;
+                color: $color_voice_dropdown;
+                padding: 1rem ;
+                border-bottom: 1px solid black;
+            }
+
+            a:hover{
+                background-color: $primary_color_button;
+                color: white;
+            }
+
+        }
+
+        &>a:nth-of-type(2):hover ~ .dropdown_shop{
+            visibility: visible;
+        }
+        .dropdown_shop:hover{
+            visibility: visible;
+        }
+
+        .dropdown_brand{
+            visibility: hidden;
+            @include dropdown_style;
+            width: 99vw;
+            display: flex;
+            top: 3px;
+            .brand_slot{
+                width: calc(100%/3);
+                height: 300px;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-position-x: 160%;
+                background-position-y: -23%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 2rem;
+
+                h2{
+                    font-size: 2.5rem;
+                    padding-bottom: 1rem;
+                }
+            }
+
+            .brand_slot:nth-of-type(1){
+                background-color: #E5EFE5;
+                background-image: url(../../dist/img/food-transparent-16-400x420.png);
+            }
+            .brand_slot:nth-of-type(2){
+                background-color: #FBF5F3;
+                background-image: url(../../dist/img/food-transparent-18-400x420.png);
+            }
+            .brand_slot:nth-of-type(3){
+                background-color: #E4F0F1;
+                background-image: url(../../dist/img/food-transparent-17-400x420.png);
+            }
+        }
+
+        &>a:nth-of-type(6):hover ~ .dropdown_brand{
+            visibility: visible;
+        }
+        .dropdown_brand:hover{
+            visibility: visible;
+        }
+
 
     }
 }

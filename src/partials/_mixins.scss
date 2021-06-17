@@ -34,6 +34,13 @@
     padding-left: 1rem
 }
 
+@mixin dropdown_style {
+    z-index: 30;
+    background-color: $bg_cart_user;
+    position: absolute;
+    margin-top: 2rem;
+}
+
 @mixin box_for_hover {
     visibility: hidden;
     position: absolute;

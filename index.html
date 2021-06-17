@@ -34,7 +34,7 @@
                     <div class="cart_user">
                         <i class="fas fa-shopping-bag"></i>
                         <i class="far fa-user"></i>
-                        <div class="cart">
+                        <div class="cart" v-if="totalPriceCart > 0">
                             <div class="cart_line" v-for="prod in cart">
                                 <img :src="prod.url" alt="">
                                 <div>
@@ -185,7 +185,7 @@
                                         <span>
                                             <i class="far fa-check-circle"></i>
                                         </span>
-                                        <a href="#">VIEW CART</a>
+                                        <a href="#" @click="returnToTop()">View Cart</a>
                                     </div>
                                     <img :src="prod.url" alt="prod.name">
                                 </div>
@@ -317,7 +317,7 @@
                                         <span @click="addToCart(index)">Add to Cart <i class="fas fa-cart-plus"></i> /</span>
                                         <span @click="moreInfo(index), openSpecificInfo()">More Info</span>
                                     </div>
-                                    <a href="#">View Cart</a>
+                                    <a href="#" @click="returnToTop()">View Cart</a>
                                 </div>
                             </div>
 

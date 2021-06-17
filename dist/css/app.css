@@ -35,6 +35,10 @@
   color: black;
   font-size: 1.5rem;
 }
+.navbar .top .zoom_icon {
+  transform: scale(1.7);
+  color: green;
+}
 .navbar .top .input_box {
   position: relative;
 }
@@ -111,7 +115,6 @@
   position: absolute;
   width: 300px;
   background-color: white;
-  border: 1px solid black;
   z-index: 10;
   right: 190px;
   padding: 1rem;
@@ -129,7 +132,7 @@
   margin-bottom: 0.5rem;
 }
 .navbar .top .cart_user .user > div {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .navbar .top .cart_user .user > div span {
   font-size: 0.8rem;

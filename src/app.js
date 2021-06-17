@@ -204,6 +204,14 @@ const app = new Vue({
         addToCart(index) {
             this.cart.push(this.newProducts[index]);
             this.totalPriceCart += parseInt(this.newProducts[index].price);
+        },
+        returnToTop() {
+            scrollY = 0;
+            document.querySelector(".fa-shopping-bag").classList.add("zoom_icon");
+            setTimeout(function () {
+                document.querySelector(".fa-shopping-bag").classList.remove("zoom_icon");
+
+            }, 2000)
         }
     },
 

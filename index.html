@@ -17,6 +17,7 @@
 
 <body>
     <div id="app">
+
         <!-- Site Header -->
         <header id="site_header">
 
@@ -25,15 +26,23 @@
 
                 <!-- Top -->
                 <div class="top">
+                    <!-- Logo -->
                     <img src="./dist/img/dark-pet-logo.png" alt="Logo of Avada Pet Supplies">
+
+                    <!-- Input -->
                     <div class="input_box">
                         <i class="fas fa-search"></i>
                         <input type="search" placeholder="Search...">
                     </div>
+
+                    <!-- Questions -->
                     <span><strong>Questions?</strong> Call us: 1.800.123.4567</span>
+
+                    <!-- Cart and user -->
                     <div class="cart_user">
                         <i class="fas fa-shopping-bag"></i>
                         <i class="far fa-user"></i>
+
                         <div class="cart" v-if="totalPriceCart > 0">
                             <div class="cart_line" v-for="prod in cart">
                                 <img :src="prod.url" alt="">
@@ -47,6 +56,7 @@
                                 <span>Total: {{totalPriceCart}} $</span>
                             </div>
                         </div>
+
                         <div class="user">
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
@@ -69,14 +79,17 @@
                         <i class="fas fa-chevron-down" v-if="voice.submenu"></i>
                     </a>
 
+                    <!-- Dropdown box Home -->
                     <div class="dropdown_home">
                         <a href="#">Home - Alternate</a>
                     </div>
 
+                    <!-- Dropdown boxShop -->
                     <div class="dropdown_shop">
                         <a href="#" v-for="element in category">{{element.name}}</a>
                     </div>
 
+                    <!-- Dropdown box Shop by Brand -->
                     <div class="dropdown_brand">
                         <div class="brand_slot">
                             <h2>Frozen</h2>
@@ -269,6 +282,7 @@
                             <span>{{element.date}}</span>
                         </div>
                     </div>
+
                     <a href="#">Read all articles</a>
 
                 </div>

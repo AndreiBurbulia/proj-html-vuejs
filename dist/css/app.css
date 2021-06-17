@@ -469,7 +469,7 @@
 .browser_container .browser .type_food .box {
   width: calc((100% /3) - 1rem);
   background-color: #1e3120;
-  background-image: url(/dist/img/bg-transparent-3.png);
+  background-image: url(../../dist/img/bg-transparent-3.png);
   background-repeat: repeat-x;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,6 @@
         justify-content: center;
         align-items: center;
 
-
         h2{
             font-family: $font_title;
             color: $primary_color_text;
@@ -54,7 +53,6 @@
             margin-top: 4rem;
             padding: 3rem  0 3rem 4rem;
             
-
             h2{
                 color: $secondary_color_text;
                 font-size: 3rem;
@@ -74,11 +72,11 @@
                 margin: 4rem 2rem 0 0;
             }
 
-
             a{
                 @include button_style;
                 @include dark_button;
             }
+
             a:hover{
                 @include light_button;
                 border: 1px solid $primary_color_button;
@@ -141,7 +139,6 @@
                     font-size: 0.8rem;
                     color: $details_color
                 }
-
             }
 
             .article:hover .hover_box{
@@ -155,6 +152,7 @@
             @include dark_button;
             margin: 4rem 0;
         }
+        
         a:hover{
             @include light_button;
             transform: scale(1.3);

@@ -104,7 +104,6 @@
                         padding: 0 0.5rem;
                         font-weight: bold;
                         color: white;
-
                     }
                 }
 
@@ -204,14 +203,13 @@
         &>a:nth-of-type(1):hover ~ .dropdown_home{
             visibility: visible;
         }
+
         .dropdown_home:hover{
             visibility: visible;
             background-color: $primary_color_button;
             a{
             color: white;
-
             }
-
         }
 
         .dropdown_home{
@@ -231,7 +229,6 @@
             @include dropdown_style;
             left: 578px;
             bottom: -192px;
-
             a{
                 display: block;
                 text-decoration: none;
@@ -271,7 +268,6 @@
                 flex-direction: column;
                 justify-content: flex-end;
                 padding: 2rem;
-
                 h2{
                     font-size: 2.5rem;
                     padding-bottom: 1rem;

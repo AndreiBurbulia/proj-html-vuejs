@@ -1,5 +1,6 @@
 footer{
     background-color: $bg_for_pattern;
+
     .conection_footer{
         @include container_size_and_center;
         color: $primary_color_text;
@@ -15,6 +16,7 @@ footer{
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
             .box{
                 width: calc((100% / 4 ) - 4rem);
                 margin: 7rem 0;
@@ -23,12 +25,14 @@ footer{
                     width: 80%;
                     padding-bottom: 2rem;
                 }
+
                 span{
                     display: block;
                     font-size: 1.2rem;
                     line-height: 2rem;
                     color: $primary_color_text;
                 }
+
                 h2{
                     font-weight: 500;
                     font-size: 1.7rem;
@@ -70,17 +74,16 @@ footer{
                 margin: 2rem 0;
                 }
 
-
                 a{
                     @include button_style;
                     @include dark_button;
                     width: 100%;
                     text-align: center;
                 }
+
                 a:hover{
                     @include light_button;
                 }
-
             }
             
         }
@@ -91,6 +94,7 @@ footer{
             justify-content: center;
             align-items: center;
             padding-bottom: 4rem;
+
             ul{
                 list-style: none;
                 padding-top: 3rem;
@@ -98,6 +102,7 @@ footer{
                 li{
                     display: inline-block;
                     padding: 0 1rem;
+                    
                     a{
                         color: $primary_color_text;
                         text-decoration: none;

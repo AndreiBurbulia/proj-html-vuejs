@@ -28,6 +28,8 @@
 }
 .navbar .top span {
   color: black;
+}
+.navbar .top span strong {
   font-size: 1.2rem;
 }
 .navbar .top i {
@@ -37,7 +39,7 @@
 }
 .navbar .top .zoom_icon {
   transform: scale(1.7);
-  color: green;
+  color: #264229;
 }
 .navbar .top .input_box {
   position: relative;
@@ -67,11 +69,11 @@
   display: none;
   position: absolute;
   width: 300px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: #dfdfdf;
   z-index: 10;
   right: 220px;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 .navbar .top .cart_user .cart .cart_line {
   height: 80px;
@@ -92,17 +94,32 @@
 }
 .navbar .top .cart_user .cart .cart_line > div span {
   color: #3d6f42;
-  font-size: 1.2rem;
-  padding-right: 1rem;
+  font-size: 1.1rem;
+  margin-right: 1rem;
   padding: 0.3rem 0;
 }
+.navbar .top .cart_user .cart .cart_line:hover {
+  background-color: #264229;
+}
+.navbar .top .cart_user .cart .cart_line:hover span {
+  color: white;
+}
 .navbar .top .cart_user .cart .total_line {
-  height: 30px;
+  height: 40px;
   width: 100%;
   background-color: seagreen;
-  line-height: 30px;
+  border-radius: 5px;
+}
+.navbar .top .cart_user .cart .total_line span {
+  text-align: right;
+  line-height: 40px;
   vertical-align: middle;
   padding: 0 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+.navbar .top .cart_user .cart .total_line:hover {
+  background-color: #264229;
 }
 .navbar .top .cart_user .fa-shopping-bag:hover ~ .cart {
   display: block;
@@ -114,12 +131,13 @@
   visibility: hidden;
   position: absolute;
   width: 300px;
-  background-color: white;
+  background-color: #dfdfdf;
   z-index: 10;
   right: 190px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 .navbar .top .cart_user .user > input {
   height: 50px;
@@ -150,6 +168,9 @@
   display: block;
   margin-top: 1rem;
   align-self: flex-end;
+  font-size: 0.9rem;
+  color: #3d6f42;
+  padding-right: 0.5rem;
 }
 .navbar .top .cart_user .fa-user:hover ~ .user {
   visibility: visible;
@@ -187,7 +208,7 @@
 .jumbotron .top {
   width: 100%;
   background-color: #1e3120;
-  background-image: url(/dist/img/bg-transparent-3.png);
+  background-image: url(../../dist/img/bg-transparent-3.png);
 }
 .jumbotron .top .container {
   width: 80%;
@@ -202,7 +223,7 @@
 .jumbotron .middle {
   width: 100%;
   height: 900px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-5-2x-scaled.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(../../dist/img/banner-5-2x-scaled.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -243,7 +264,7 @@
 .jumbotron .bottom {
   width: 100%;
   background-color: #1e3120;
-  background-image: url(/dist/img/bg-transparent-3.png);
+  background-image: url(../../dist/img/bg-transparent-3.png);
 }
 .jumbotron .bottom .container {
   width: 80%;
@@ -392,7 +413,7 @@
 }
 .browser_container .browser .new_arrivals {
   height: 600px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-3-2x-scaled.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(../../dist/img/banner-3-2x-scaled.jpg);
   background-size: 100% 100%;
   margin: 7rem 0;
   display: flex;
@@ -560,7 +581,7 @@
 .testimonial .container .join_newsletter {
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.027) 0%, rgba(0, 0, 0, 0.022) 30%), url(/dist/img/banner-7-2x-scaled.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.027) 0%, rgba(0, 0, 0, 0.022) 30%), url(../../dist/img/banner-7-2x-scaled.jpg);
   background-size: cover;
   margin-top: 4rem;
   padding: 3rem 0 3rem 4rem;
@@ -715,16 +736,16 @@
   transition: 0.3s;
 }
 .information .left {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-8-2x.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(../../dist/img/banner-8-2x.jpg);
 }
 .information .right {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(/dist/img/banner-9-2x.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%), url(../../dist/img/banner-9-2x.jpg);
 }
 .information .bottom {
   height: 300px;
   width: 100%;
   background-color: #1e3120;
-  background-image: url(/dist/img/bg-transparent-3.png);
+  background-image: url(../../dist/img/bg-transparent-3.png);
   background-repeat: repeat-x;
 }
 .information .bottom .container {

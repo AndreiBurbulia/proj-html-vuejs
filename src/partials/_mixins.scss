@@ -6,7 +6,7 @@
 @mixin bg_with_pattern {
     width: 100%;
     background-color: $bg_for_pattern;
-    background-image: url(/dist/img/bg-transparent-3.png);
+    background-image: url(../../dist/img/bg-transparent-3.png);
 }
 
 @mixin button_style {

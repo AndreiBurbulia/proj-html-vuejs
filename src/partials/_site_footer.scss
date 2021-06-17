@@ -54,7 +54,7 @@ footer{
             }
 
             .box:last-of-type{
-                background-color: #264229;
+                background-color: $bg_light;
                 background-image: url(/dist/img/bg-transparent-3.png);
                 background-repeat: repeat-x;
                 display: flex;

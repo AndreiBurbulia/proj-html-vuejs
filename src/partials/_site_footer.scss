@@ -78,7 +78,7 @@ footer{
                     text-align: center;
                 }
                 a:hover{
-                    @include light_button
+                    @include light_button;
                 }
 
             }

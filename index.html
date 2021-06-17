@@ -191,10 +191,10 @@
                                     <img :src="prod.url" alt="prod.name">
                                 </div>
                                 <span>{{prod.name}}</span>
-                                <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
+                                <span class="price" v-if="!prod.offPrice"> ${{prod.price}}</span>
                                 <div v-else>
-                                    <span class="offPrice"> <del>{{prod.price}}</del> </span>
-                                    <span class="price">{{prod.offPrice}}</span>
+                                    <span class="offPrice"> <del>${{prod.price}}</del> </span>
+                                    <span class="price">${{prod.offPrice}}</span>
                                 </div>
                             </div>
 
@@ -324,10 +324,10 @@
 
 
                             <p>{{prod.name}}</p>
-                            <span class="price" v-if="!prod.offPrice">{{prod.price}}</span>
+                            <span class="price" v-if="!prod.offPrice">${{prod.price}}</span>
                             <div v-else>
-                                <span class="offPrice"> <del>{{prod.price}}</del> </span>
-                                <span class="price">{{prod.offPrice}}</span>
+                                <span class="offPrice"> <del>${{prod.price}}</del> </span>
+                                <span class="price">${{prod.offPrice}}</span>
                                 <span class="sale">Sale!</span>
                             </div>
                         </div>
@@ -343,7 +343,7 @@
                         <div>
                             <span>{{newProducts[indexInfoProd].name}}</span>
                             <div>
-                                <span>{{newProducts[indexInfoProd].price}}</span>
+                                <span>${{newProducts[indexInfoProd].price}}</span>
                                 <span v-for="x in newProducts[indexInfoProd].star"><i class="fas fa-star"></i></span>
                                 <span>(1 customers review)</span>
                             </div>
